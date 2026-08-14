@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: xbet-fast-cash-backend
+    env: node
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: MIN_TRANSACTION_LKR
+        value: "100"
+      - key: MAX_TRANSACTION_LKR
+        value: "500000"

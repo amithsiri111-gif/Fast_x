@@ -1,0 +1,6 @@
+{
+  "name": "Fast Cash",
+  "description": "Fast Cash — 1xBet Agent & Payment Support portal",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
